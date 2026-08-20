@@ -1,0 +1,124 @@
+/* ---------- ROOT LAYOUT ---------- */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a, #020617);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+/* ---------- LOGO ---------- */
+.logo {
+  height: 5em;
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px #3b82f6);
+}
+
+/* ---------- CARDS (GLOBAL GLASS STYLE) ---------- */
+.card {
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(59,130,246,0.6);
+}
+
+/* ---------- INPUTS ---------- */
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+  outline: none;
+  width: 250px;
+}
+
+input:focus, select:focus {
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 10px rgba(59,130,246,0.5);
+}
+
+/* ---------- HEADINGS ---------- */
+h1, h2, h3, h4 {
+  color: #f1f5f9;
+}
+
+/* ---------- TEXT ---------- */
+p {
+  color: #cbd5f5;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card, button {
+  animation: fadeIn 0.5s ease;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  input, select {
+    width: 100%;
+  }
+}

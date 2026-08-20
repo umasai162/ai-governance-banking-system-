@@ -1,0 +1,7 @@
+{
+  "upload": "Upload Loan Document",
+  "analyze": "Analyze Policy",
+  "invalidDoc": "Invalid document. Please upload loan related documents only.",
+  "detectedType": "Detected Document Type",
+  "riskAnalyzer": "Loan Risk Analyzer"
+}
